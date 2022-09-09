@@ -90,7 +90,7 @@ submit.addEventListener('click',()=>{
     }
     else{
         data = document.getElementById('requestJsonText').value;
-        // console.log(data);
+
     }
     // console.log("url is: ", url);
     // console.log("Request type:", requestType);
@@ -111,6 +111,7 @@ submit.addEventListener('click',()=>{
             })
         }
         
+     // if the request type is post, invoke fetch to create a post request
         else{
             fetch(url,{
                 method: 'POST',
@@ -126,9 +127,6 @@ submit.addEventListener('click',()=>{
                 Prism.highlightAll();
             })
         }
-
-// let myval = document.getElementById('responsePrism').value;
-console.log(url)
 
 
 })
